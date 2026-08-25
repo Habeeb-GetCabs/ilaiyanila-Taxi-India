@@ -1,0 +1,15 @@
+/* Ilayanila Taxi Color Palette */
+.bg-color-1 { background-color: #f8fafc; }
+.bg-color-2 { background-color: #0b3a6e; }
+.theme-btn {
+  background: #0b3a6e;
+  color: #ffffff !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+}
+.theme-btn:hover {
+  background: #e0b336;
+  color: #071f3b !important;
+}

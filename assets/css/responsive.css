@@ -1,0 +1,27 @@
+/* Ilayanila Taxi Responsive Styles */
+@media (max-width: 991px) {
+  .navigation {
+    display: none;
+  }
+  .carousel-text {
+    font-size: 26px;
+  }
+  .bookingform-details {
+    padding: 20px 15px;
+  }
+  #FormLead {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .carousel {
+    height: 320px;
+  }
+  .carousel-text {
+    font-size: 20px;
+  }
+  .carousel-text p {
+    font-size: 14px;
+  }
+}
