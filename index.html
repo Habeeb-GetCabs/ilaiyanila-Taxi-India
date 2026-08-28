@@ -41,22 +41,6 @@
 <body>
 <div class="boxed_wrapper">
 
-<!-- Top Header Contact Bar (Mi Cabs Style) -->
-<div class="header-top-bar">
-  <div class="auto-container">
-    <div class="top-bar-inner">
-      <div class="top-info">
-        <a href="tel:+918754825035"><i class="fa-solid fa-phone"></i> +91 8754825035</a>
-        <a href="mailto:ilayanilataxiindia@gmail.com"><i class="fa-solid fa-envelope"></i> ilayanilataxiindia@gmail.com</a>
-        <span class="d-none d-md-inline"><i class="fa-solid fa-location-dot"></i> Ganapathy, Coimbatore</span>
-      </div>
-      <div>
-        <span class="top-badge"><i class="fa-solid fa-bolt"></i> 24x7 Outstation Taxi & Tour Service</span>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- main header -->
 <header class="main-header">
 <div class="header-lower">
@@ -97,14 +81,11 @@
 </div>
 </header>
 
-<!-- Hero Carousel Banner -->
+<!-- Static Hero Banner -->
 <section class="carousel">
   <div class="carousel-inner position-relative h-100">
-    <div class="carousel-slide carousel-item active position-absolute w-100 h-100" style="transition: opacity 0.8s ease;">
-      <img src="./assets/images/gallery/banner1.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1920&q=80';" alt="Ooty Hill Station Tea Garden Scenery - Ilayanila Taxi" referrerPolicy="no-referrer" />
-    </div>
-    <div class="carousel-slide carousel-item position-absolute w-100 h-100" style="opacity: 0; transition: opacity 0.8s ease;">
-      <img src="./assets/images/gallery/banner3.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1920&q=80';" alt="Misty Nilgiri Hills Ooty Scenery" referrerPolicy="no-referrer" />
+    <div class="carousel-slide active position-absolute w-100 h-100">
+      <img src="./assets/images/gallery/banner1.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1596895111956-bf1cf0599ce5?auto=format&fit=crop&w=1920&q=80';" alt="Outstation Taxi Tour - Ilayanila Taxi" referrerPolicy="no-referrer" />
     </div>
     <div class="carousel-caption-custom">
       <h1 class="carousel-text">Premium Outstation Cabs & Tour Packages</h1>
@@ -893,21 +874,6 @@ function calculateDistanceOSM() {
     document.getElementById('hiddendistance').value = distance.toFixed(1);
     SumDistance();
 }
-
-let currentSlide = 0;
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-slide');
-    if (!slides.length) return;
-    if (index >= slides.length) currentSlide = 0;
-    else if (index < 0) currentSlide = slides.length - 1;
-    else currentSlide = index;
-    slides.forEach((slide, i) => {
-        slide.style.opacity = i === currentSlide ? '1' : '0';
-        slide.style.zIndex = i === currentSlide ? '2' : '1';
-    });
-}
-function nextSlide() { showSlide(currentSlide + 1); }
-setInterval(nextSlide, 5000);
 
 window.onload = function () {
     // Universal image error fallback handler
